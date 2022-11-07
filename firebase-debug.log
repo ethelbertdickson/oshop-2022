@@ -1,0 +1,98 @@
+[debug] [2022-11-04T10:06:07.696Z] ----------------------------------------------------------------------
+[debug] [2022-11-04T10:06:07.701Z] Command:       /Users/el/.nvm/versions/node/v16.17.0/bin/node /Users/el/.nvm/versions/node/v16.17.0/bin/firebase emulators:start
+[debug] [2022-11-04T10:06:07.702Z] CLI Version:   11.16.0
+[debug] [2022-11-04T10:06:07.702Z] Platform:      darwin
+[debug] [2022-11-04T10:06:07.702Z] Node Version:  v16.17.0
+[debug] [2022-11-04T10:06:07.704Z] Time:          Fri Nov 04 2022 11:06:07 GMT+0100 (West Africa Standard Time)
+[debug] [2022-11-04T10:06:07.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-04T10:06:07.868Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"ignore"}
+[debug] [2022-11-04T10:06:07.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-04T10:06:07.879Z] > authorizing via signed-in user (ethelbertdickson@gmail.com)
+[debug] [2022-11-04T10:06:08.225Z] openjdk version "11.0.11" 2021-04-20
+
+[debug] [2022-11-04T10:06:08.226Z] OpenJDK Runtime Environment AdoptOpenJDK-11.0.11+9 (build 11.0.11+9)
+OpenJDK 64-Bit Server VM AdoptOpenJDK-11.0.11+9 (build 11.0.11+9, mixed mode)
+
+[debug] [2022-11-04T10:06:08.231Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: auth, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, database, hosting"}}
+[debug] [2022-11-04T10:06:10.128Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-04T10:06:10.128Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-04T10:06:10.128Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-04T10:06:10.129Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-04T10:06:10.129Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4201},{"address":"::1","family":"IPv6","port":4201}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"database":[{"address":"127.0.0.1","family":"IPv4","port":8081}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-11-04T10:06:10.143Z] [hub] writing locator at /var/folders/3h/8m4yysrd5yv3mvg1040ys80h0000gn/T/hub-eshop-73ce8.json
+[debug] [2022-11-04T10:06:10.159Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8 [none]
+[debug] [2022-11-04T10:06:10.790Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8 200
+[debug] [2022-11-04T10:06:10.790Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8 {"projectId":"eshop-73ce8","projectNumber":"784617420588","displayName":"eshop","name":"projects/eshop-73ce8","resources":{"hostingSite":"eshop-73ce8","realtimeDatabaseInstance":"eshop-73ce8-default-rtdb"},"state":"ACTIVE","etag":"1_0e5fcd96-b2e3-46f0-986b-09be2a21abff"}
+[debug] [2022-11-04T10:06:10.791Z] database rules config:  [{"instance":"eshop-73ce8-default-rtdb","rules":"/Users/el/Sites/angular/oshop/database.rules.json"}]
+[debug] [2022-11-04T10:06:10.798Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-11-04T10:06:10.798Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-11-04T10:06:10.798Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-11-04T10:06:10.799Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/el/.cache/firebase/emulators/firebase-database-emulator-v4.11.0.jar","--host","127.0.0.1","--port",8081,"--single_project_mode","Warning"],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/el/.cache/firebase/emulators/firebase-database-emulator-v4.11.0.jar\",\"--host\",\"127.0.0.1\",\"--port\",8081,\"--single_project_mode\",\"Warning\"],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-11-04T10:06:11.972Z] WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/Users/el/.cache/firebase/emulators/firebase-database-emulator-v4.11.0.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release {"metadata":{"emulator":{"name":"database"},"message":"WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/Users/el/.cache/firebase/emulators/firebase-database-emulator-v4.11.0.jar) to field sun.nio.ch.SelectorImpl.selectedKeys\nWARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release"}}
+[debug] [2022-11-04T10:06:11.972Z] 
+ {"metadata":{"emulator":{"name":"database"},"message":"\n"}}
+[debug] [2022-11-04T10:06:13.135Z] 11:06:13.132 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"11:06:13.132 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-11-04T10:06:13.448Z] 11:06:13.446 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:8081
+ {"metadata":{"emulator":{"name":"database"},"message":"11:06:13.446 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:8081\n"}}
+[debug] [2022-11-04T10:06:25.555Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/eshop-73ce8/sites 
+[debug] [2022-11-04T10:06:27.163Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/eshop-73ce8/sites 200
+[debug] [2022-11-04T10:06:27.164Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/eshop-73ce8/sites {"sites":[{"name":"projects/eshop-73ce8/sites/eshop-73ce8","defaultUrl":"https://eshop-73ce8.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-04T10:06:27.165Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8/webApps/-/config [none]
+[debug] [2022-11-04T10:06:28.266Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8/webApps/-/config 200
+[debug] [2022-11-04T10:06:28.266Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8/webApps/-/config {"projectId":"eshop-73ce8","appId":"1:784617420588:web:0ba26a796f9fb1b6315e89","databaseURL":"https://eshop-73ce8-default-rtdb.firebaseio.com","storageBucket":"eshop-73ce8.appspot.com","apiKey":"AIzaSyCxChKzwGMnXj1Sef5o1KpPKYkP5AbYb6Y","authDomain":"eshop-73ce8.firebaseapp.com","messagingSenderId":"784617420588","measurementId":"G-WB6KY59QJQ"}
+[debug] [2022-11-04T10:06:28.292Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8 [none]
+[debug] [2022-11-04T10:06:28.916Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8 200
+[debug] [2022-11-04T10:06:28.916Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eshop-73ce8 {"projectId":"eshop-73ce8","projectNumber":"784617420588","displayName":"eshop","name":"projects/eshop-73ce8","resources":{"hostingSite":"eshop-73ce8","realtimeDatabaseInstance":"eshop-73ce8-default-rtdb"},"state":"ACTIVE","etag":"1_0e5fcd96-b2e3-46f0-986b-09be2a21abff"}
+[info] i  hosting[eshop-73ce8]: Serving hosting files from: dist/oshop {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/oshop\u001b[22m"}}
+[info] ✔  hosting[eshop-73ce8]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-11-04T10:06:29.307Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-11-04T10:06:29.308Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-11-04T10:06:29.308Z] Starting Emulator UI with command {"binary":"node","args":["/Users/el/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/el/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-11-04T10:06:29.349Z] 11:06:29.349 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.NamespaceActor - eshop-73ce8 successfully activated FBKV (SurveyIdle(0)) wait: 1017ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"11:06:29.349 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.NamespaceActor - eshop-73ce8 successfully activated FBKV (SurveyIdle(0)) wait: 1017ms, init: 0ms\n"}}
+[debug] [2022-11-04T10:06:29.608Z] Web / API server started at 127.0.0.1:4201
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4201\n"}}
+[debug] [2022-11-04T10:06:29.609Z] Web / API server started at ::1:4201
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4201\n"}}
+[debug] [2022-11-04T10:06:29.845Z] >>> [apiv2][query] PUT http://127.0.0.1:8081/.settings/rules.json ns=eshop-73ce8-default-rtdb
+[debug] [2022-11-04T10:06:29.845Z] >>> [apiv2][body] PUT http://127.0.0.1:8081/.settings/rules.json "{\n    \"rules\": {\n        \".read\": \"now < 1669244400000\",\n        \".write\": \"now < 1669244400000\"\n    }\n}\n"
+[debug] [2022-11-04T10:06:29.854Z] 11:06:29.854 [FirebaseWorkerPool-1-1] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested 
+namespace eshop-73ce8-default-rtdb, but the emulator is configured for eshop-73ce8. To 
+opt-out of single project mode add/set the single_project_mode: false property in 
+the firebase.json emulators config. 
+ {"metadata":{"emulator":{"name":"database"},"message":"11:06:29.854 [FirebaseWorkerPool-1-1] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested \nnamespace eshop-73ce8-default-rtdb, but the emulator is configured for eshop-73ce8. To \nopt-out of single project mode add/set the single_project_mode: false property in \nthe firebase.json emulators config. \n"}}
+[debug] [2022-11-04T10:06:29.863Z] 11:06:29.863 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - eshop-73ce8-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 2ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"11:06:29.863 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - eshop-73ce8-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 2ms, init: 0ms\n"}}
+[debug] [2022-11-04T10:06:29.961Z] 11:06:29.960 [NamespaceSystem-blocking-namespace-operation-dispatcher-11] INFO com.firebase.core.namespace.StateManager - Namespace eshop-73ce8-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"11:06:29.960 [NamespaceSystem-blocking-namespace-operation-dispatcher-11] INFO com.firebase.core.namespace.StateManager - Namespace eshop-73ce8-default-rtdb status Active to Active\n"}}
+[debug] [2022-11-04T10:06:30.001Z] <<< [apiv2][status] PUT http://127.0.0.1:8081/.settings/rules.json 200
+[debug] [2022-11-04T10:06:30.001Z] <<< [apiv2][body] PUT http://127.0.0.1:8081/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4201/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI            │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4201/auth     │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Database       │ 127.0.0.1:8081 │ http://127.0.0.1:4201/database │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                            │
+└────────────────┴────────────────┴────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
